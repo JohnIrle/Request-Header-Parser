@@ -1,7 +1,7 @@
 {
-  "name": "my-glitch-app",
+  "name": "request-header-parser",
   "version": "0.0.1",
-  "description": "What am I about?",
+  "description": "Returns a JSON object with the IP address, language and operating system of a request.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -13,7 +13,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "url": "https://github.com/JohnIrle/Request-Header-Parser"
   },
   "license": "MIT",
   "keywords": [
