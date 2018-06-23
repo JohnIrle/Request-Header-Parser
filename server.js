@@ -1,10 +1,10 @@
-var express = require('express');
+var express = require("express");
 var app = express();
-var routes = require('./routes/index');
+var routes = require("./routes/index");
 
-app.use('/', routes);
+app.use("/", routes);
 
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+var listener = app.listen(5000, function() {
+  console.log("Your app is listening on port " + 5000);
 });
