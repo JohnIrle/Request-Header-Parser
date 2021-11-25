@@ -1,6 +1,6 @@
 {
   "name": "request-header-parser",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Returns a JSON object with the IP address, language and operating system of a request.",
   "main": "server.js",
   "scripts": {
