@@ -4,7 +4,9 @@
   "description": "Returns a JSON object with the IP address, language and operating system of a request.",
   "main": "server.js",
   "scripts": {
+    "prebuild": "rm -rf ./build",
     "build": "tsc",
+    "postbuild": "cp -r ./views ./build",
     "start": "node build/index.js",
     "dev": "ts-node-dev index.ts",
     "test": "jest --watchAll --no-cache",
