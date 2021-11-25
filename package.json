@@ -9,8 +9,8 @@
     "postbuild": "cp -r ./views ./build",
     "start": "node build/index.js",
     "dev": "ts-node-dev index.ts",
-    "test": "jest --watchAll --no-cache",
-    "test:nowatch": "jest",
+    "test": "jest",
+    "test:watch": "jest --watchAll --no-cache",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
