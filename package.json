@@ -4,13 +4,20 @@
   "description": "Returns a JSON object with the IP address, language and operating system of a request.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "prebuild": "rm -rf ./build",
+    "build": "tsc",
+    "postbuild": "cp -r ./views ./build",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev index.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll --no-cache",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "express": "^4.15.4"
-  },
-  "engines": {
-    "node": "8.x"
+    "@types/express": "^4.17.13",
+    "express": "^4.15.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
   },
   "repository": {
     "url": "https://github.com/JohnIrle/Request-Header-Parser"
@@ -20,5 +27,16 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.10",
+    "@types/supertest": "^2.0.11",
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.0.7"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
 }
