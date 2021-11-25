@@ -22,11 +22,24 @@ Local development is localhost:5000/api/whoami
 npm install
 ```
 
-## Deployment
+## Local development
+
+```node
+npm run dev
+```
+
+## Building
+
+```node
+npm run build
+```
+
+and run with:
 
 ```node
 npm run start
 ```
+
 
 ## Built With
 
