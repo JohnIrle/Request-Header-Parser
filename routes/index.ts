@@ -2,15 +2,15 @@ import express from "express";
 const router = express.Router();
 import path from "path";
 
-router.get("/", function (req, res) {
+router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../views/index.html"));
 });
 
-router.get("/favicon.ico", function (req, res) {
+router.get("/favicon.ico", (req, res) => {
   res.status(204);
 });
 
-router.get("/api/whoami", function (req, res) {
+router.get("/api/whoami", (req, res) => {
   const ip = req.get("x-forwarded-for");
   const ipParse = ip?.split(",");
   const language = req.get("accept-language");
