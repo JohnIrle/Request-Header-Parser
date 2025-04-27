@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2019 John Irle
+
+SPDX-License-Identifier: MIT
+-->
+
 # Request-Header-Parser
 
 An express app that parses the header of a request and returns a JSON object with the IP address, language and operating system of the requester.  
